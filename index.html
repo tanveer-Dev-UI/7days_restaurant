@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>7 Days Restaurant | Luxury Dining</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- GSAP for smooth luxury animations -->
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">7Days</div>
+    <!-- MOBILE MENU DOTS -->
+<div class="menu-dots" id="menuDots">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    <nav id="mobileNav">
+      <ul class="nav-links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#Reservation">Reservations</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="Home" class="hero">
+    <!-- VIDEO PLACEHOLDER -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      
+       <source src="food_video.mp4" type="video/mp4">
+    </video>
+
+    <!-- BOTTOM DARK OVERLAY -->
+    <div class="overlay-bottom"></div>
+
+    <!-- PARTICLES CONTAINER -->
+    <div class="particles">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+      <h1 class="fade-up luxury-text">7Days Restaurant</h1>
+      <p class="fade-up delay luxury-text">
+        A Premium Luxury Dining Experience
+      </p>
+      <a href="#menu" class="hero-btn fade-up delay2">Explore Menu</a>
+    </div>
+    
+<a href="#about" class="scroll-down">
+  <span class="scroll-text">Scroll Down</span>
+  <span class="arrow"></span>
+</a>
+
+  </section>
+<!-- ABOUT / LUXURY FEATURES SECTION -->
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="reveal">Experience Elegance</h2>
+    <p class="reveal delay">
+      Every detail is curated for a luxurious dining experience. Premium ambiance, exquisite dishes, and service that makes every moment memorable.
+    </p>
+    <a href="#menu" class="btn reveal delay2">Explore Our Menu</a>
+
+    <div class="features">
+      <div class="feature-card reveal">
+        <h3>Fine Dining</h3>
+        <p>Handpicked ingredients, crafted by top chefs.</p>
+      </div>
+      <div class="feature-card reveal delay">
+        <h3>Luxury Ambiance</h3>
+        <p>Elegant interiors, perfect lighting, soothing music.</p>
+      </div>
+      <div class="feature-card reveal delay2">
+        <h3>Exclusive Experience</h3>
+        <p>Reserved seating, curated menus, private events.</p>
+      </div>
+      <div class="feature-card reveal delay3">
+        <h3>Gourmet Cuisine</h3>
+        <p>Chef-special recipes for a memorable taste.</p>
+      </div>
+      <div class="feature-card reveal delay4">
+        <h3>Premium Drinks</h3>
+        <p>Signature cocktails and luxury beverages.</p>
+      </div>
+      <div class="feature-card reveal delay5">
+        <h3>Private Dining</h3>
+        <p>Elegant private rooms for special occasions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- MENU SECTION -->
+<section class="menu" id="menu">
+
+  <div class="container">
+    <h2 class="reveal">Our Menu</h2>
+    <p class="reveal delay">Experience our exquisite range of dishes, curated for a luxurious dining experience.</p>
+    
+
+    <!-- JUICES -->
+    <h3 class="menu-category reveal delay2">Juices</h3>
+    <div class="menu-grid">
+      <div class="menu-card reveal"><img src="image/fresh-lime_result.webp" alt="Fresh Lime Juice"><h4>Fresh Lime Juice</h4><p>₹90</p></div>
+      <div class="menu-card reveal delay"><img src="image/pineapple_result.webp" alt="Pineapple Juice"><h4>Pineapple Juice</h4><p>₹90</p></div>
+      <div class="menu-card reveal delay2"><img src="image/mango_result.webp" alt="Mango Juice"><h4>Mango Juice</h4><p>₹90</p></div>
+      <div class="menu-card reveal delay3"><img src="image/apple_result.webp" alt="Apple Juice"><h4>Apple Juice</h4><p>₹90</p></div>
+      <div class="menu-card reveal delay4"><img src="image/cranberry_result.webp" alt="Cranberry Juice"><h4>Cranberry Juice</h4><p>₹120</p></div>
+      <div class="menu-card reveal delay5"><img src="image/pomegranante_result.webp" alt="Pomegranate Juice"><h4>Pomegranate Juice</h4><p>₹120</p></div>
+    </div>
+
+    <!-- SMOOTHIES -->
+    <h3 class="menu-category reveal delay6">Smoothies</h3>
+    <div class="menu-grid">
+      <div class="menu-card reveal"><img src="image/mango-pineapple_result.webp" alt="Mango Pineapple Delight"><h4>Mango Pineapple Delight</h4><p>₹125</p></div>
+      <div class="menu-card reveal delay"><img src="image/mixed-mango_result.webp" alt="Mixed Mango"><h4>Mixed Mango</h4><p>₹125</p></div>
+      <div class="menu-card reveal delay2"><img src="image/smoothie-caramel_result.webp" alt="Smoothie Caramel"><h4>Smoothie Caramel</h4><p>₹125</p></div>
+      <div class="menu-card reveal delay3"><img src="image/strawberry-smoothie_result.webp" alt="Strawberry Smoothie"><h4>Strawberry Smoothie</h4><p>₹125</p></div>
+      <div class="menu-card reveal delay4"><img src="image/freak-shake_result.webp" alt="Freak Shake"><h4>Freak Shake</h4><p>₹150</p></div>
+      <div class="menu-card reveal delay5"><img src="image/chocolate-shake_result.webp" alt="Chocolate Shake"><h4>Chocolate Shake</h4><p>₹150</p></div>
+    </div>
+
+    <!-- SOUPS -->
+    <h3 class="menu-category reveal delay6">Veg & Non-Veg Soups</h3>
+    <div class="menu-grid">
+      <div class="menu-card reveal"><img src="image/veg-mancho_result.webp" alt="Veg Manchow Soup"><h4>Veg Manchow Soup</h4><p>₹125</p></div>
+      <div class="menu-card reveal delay"><img src="image/corn-soup_result.webp" alt="Veg Sweet Corn Soup"><h4>Veg Sweet Corn Soup</h4><p>₹125</p></div>
+      <div class="menu-card reveal delay2"><img src="image/veg-lemon-coriander-soup_result.webp" alt="Veg Lemon Coriander Soup"><h4>Veg Lemon Coriander Soup</h4><p>₹125</p></div>
+      <div class="menu-card reveal delay3"><img src="image/veg-hot-and-sour-soup_result.webp" alt="Veg Hot & Sour Soup"><h4>Veg Hot & Sour Soup</h4><p>₹125</p></div>
+      <div class="menu-card reveal delay4"><img src="image/chicken-manchow-soup_result.webp" alt="Chicken Manchow Soup"><h4>Chicken Manchow Soup</h4><p>₹150</p></div>
+      <div class="menu-card reveal delay5"><img src="image/chicken-hot-soup_result.webp" alt="Chicken Hot Soup"><h4>Chicken Hot Soup</h4><p>₹150</p></div>
+    </div>
+
+    <!-- VEG MAIN COURSE -->
+    <h3 class="menu-category reveal delay6">Veg Main Course</h3>
+    <div class="menu-grid">
+      <div class="menu-card reveal"><img src="image/Paneer-butter-masala_result.webp" alt="Paneer Butter Masala"><h4>Paneer Butter Masala</h4><p>₹299</p></div>
+      <div class="menu-card reveal delay"><img src="image/paneer-bhurji_result.webp" alt="Paneer Bhurji"><h4>Paneer Bhurji</h4><p>₹279</p></div>
+      <div class="menu-card reveal delay2"><img src="image/shahi-paneer_result.webp" alt="Shahi Paneer"><h4>Shahi Paneer</h4><p>₹329</p></div>
+      <div class="menu-card reveal delay3"><img src="image/palak-paneer_result.webp" alt="Palak Paneer"><h4>Palak Paneer</h4><p>₹299</p></div>
+      <div class="menu-card reveal delay4"><img src="image/paneer-momos_result.webp" alt="Paneer Momos"><h4>Paneer Momos</h4><p>₹329</p></div>
+      <div class="menu-card reveal delay5"><img src="image/kadhai-paneer_result.webp" alt="Kadhai Paneer"><h4>Kadhai Paneer</h4><p>₹299</p></div>
+    </div>
+
+    <!-- NON-VEG MAIN COURSE -->
+    <h3 class="menu-category reveal delay6">Non-Veg Main Course</h3>
+    <div class="menu-grid">
+      <div class="menu-card reveal"><img src="image/hyedrabadi-chicken_result.webp" alt="Chicken Hyderabadi"><h4>Chicken Hyderabadi</h4><p>₹329</p></div>
+      <div class="menu-card reveal delay"><img src="image/butter-chicken_result.webp" alt="Butter Chicken"><h4>Butter Chicken</h4><p>₹349</p></div>
+      <div class="menu-card reveal delay2"><img src="image/chicken-tikka_result.webp" alt="Chicken Tikka Masala"><h4>Chicken Tikka Masala</h4><p>₹359</p></div>
+      <div class="menu-card reveal delay3"><img src="image/chicken-tawa_result.webp" alt="Tawa Chicken"><h4>Tawa Chicken</h4><p>₹329</p></div>
+      <div class="menu-card reveal delay4"><img src="image/chicken-rara_result.webp" alt="Chicken Rara"><h4>Chicken Rara</h4><p>₹349</p></div>
+      <div class="menu-card reveal delay5"><img src="image/mutton-curry_result.webp" alt="Mutton Curry"><h4>Mutton Curry</h4><p>₹399</p></div>
+    </div>
+
+    <!-- RICE, BIRYANI & NOODLES -->
+    <h3 class="menu-category reveal delay6">Rice, Biryani & Noodles</h3>
+    <div class="menu-grid">
+      <div class="menu-card reveal"><img src="image/veg-fried-rice_result.webp" alt="Veg Fried Rice"><h4>Veg Fried Rice</h4><p>₹129</p></div>
+      <div class="menu-card reveal delay"><img src="image/chicken-fried-rice_result.webp" alt="Chicken Fried Rice"><h4>Chicken Fried Rice</h4><p>₹149</p></div>
+      <div class="menu-card reveal delay2"><img src="image/veg-biryani_result.webp" alt="Veg Biryani"><h4>Veg Biryani</h4><p>₹179</p></div>
+      <div class="menu-card reveal delay3"><img src="image/chicken-biryani_result.webp" alt="Chicken Biryani"><h4>Chicken Biryani</h4><p>₹199</p></div>
+      <div class="menu-card reveal delay4"><img src="image/veg-hakka-noodles_result.webp" alt="Veg Hakka Noodles"><h4>Veg Hakka Noodles</h4><p>₹149</p></div>
+      <div class="menu-card reveal delay5"><img src="image/chicken-hakka-noodles_result.webp" alt="Chicken Hakka Noodles"><h4>Chicken Hakka Noodles</h4><p>₹169</p></div>
+    </div>
+
+    <!-- DESSERTS -->
+    <h3 class="menu-category reveal delay6">Desserts & Sweets</h3>
+    <div class="menu-grid">
+      <div class="menu-card reveal"><img src="image/gulab-jamun_result.webp" alt="Gulab Jamun"><h4>Gulab Jamun</h4><p>₹90</p></div>
+      <div class="menu-card reveal delay"><img src="image/rasmalai_result.webp" alt="Rasmalai"><h4>Rasmalai</h4><p>₹120</p></div>
+      <div class="menu-card reveal delay2"><img src="image/icecream_result.webp" alt="Ice Cream"><h4> Ice Cream</h4><p>₹80</p></div>
+      <div class="menu-card reveal delay3"><img src="image/chocolate-brownie_result.webp" alt="Chocolate Brownie"><h4>Chocolate Brownie</h4><p>₹120</p></div>
+      <div class="menu-card reveal delay4"><img src="image/butter-scotch-icecream_result.webp" alt="Butter Scotch Ice Cream"><h4>Butter Scotch Ice Cream</h4><p>₹110</p></div>
+      <div class="menu-card reveal delay5"><img src="image/strawberry-icecream_result.webp" alt="Strawberry Ice Cream"><h4>Strawberry Ice Cream</h4><p>₹110</p></div>
+    </div>
+
+  </div>
+</section>
+<section class="booking-ultra" id="booking">
+  <div class="booking-grid">
+
+    <!-- LEFT CONTENT -->
+    <div class="booking-left">
+      <h5>Reservation Desk</h5>
+      <h2>
+        Book Your<br>
+        <span>Luxury Dining</span><br>
+        Experience
+      </h2>
+
+      <p>
+        Reserve your table in advance and enjoy handcrafted dishes,
+        premium ambience and world-class service at 7Days Restaurant.
+      </p>
+
+      <ul>
+        <li>✔ Luxury Ambience</li>
+        <li>✔ Certified Master Chefs</li>
+        <li>✔ Fresh & Premium Ingredients</li>
+        <li>✔ Open 7 Days a Week</li>
+      </ul>
+
+      <div class="booking-contact">
+        <div>
+          <small>Call Us</small>
+          <span>+91 9XXXXXXXXX</span>
+        </div>
+        <div>
+          <small>Email</small>
+          <span>booking@7daysrestaurant.com</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <form  id="Reservation"class="ultra-form">
+
+  <!-- animated border -->
+  <div class="border-run"></div>
+
+  <div class="field">
+    <input type="text" required>
+    <label>Your Name</label>
+  </div>
+
+  <div class="field">
+    <input type="tel" required>
+    <label>Phone Number</label>
+  </div>
+
+  <div class="field">
+    <input type="email" required>
+    <label>Email Address</label>
+  </div>
+
+  <div class="row">
+    <div class="field">
+      <input type="date" required>
+      <label>Date</label>
+    </div>
+    <div class="field">
+      <input type="time" required>
+      <label>Time</label>
+    </div>
+  </div>
+
+  <!-- FIXED GUEST SELECT -->
+  <div class="field">
+    <select required>
+      <option value="" disabled selected hidden></option>
+      <option>1 Guest</option>
+      <option>2 Guests</option>
+      <option>4 Guests</option>
+      <option>6 Guests</option>
+      <option>8+ Guests</option>
+    </select>
+    <label>Guests</label>
+  </div>
+
+  <!-- FIXED SPECIAL REQUEST -->
+  <div class="field textarea">
+    <textarea required></textarea>
+    <label>
+      Special Requests <span>(Birthday, Anniversary, Window Seat)</span>
+    </label>
+  </div>
+
+  <button type="submit">Confirm Reservation</button>
+</form>
+
+  </div>
+</section>
+<section class="gallery" id="Gallery">
+  <div class="container">
+    <h5 class="reveal">Our Gallery</h5>
+    <h2 class="reveal delay">Moments at <span>7Days Restaurant</span></h2>
+
+    <div class="gallery-grid">
+      <div class="gallery-card reveal" style="background-image:url('image/img1_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/food1_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/buffer3_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/img5_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/food2_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/buffer2_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/img3_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/food3_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/img6_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/buffer1_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/img4_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/food4_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/food5_result.webp')"></div>
+      <div class="gallery-card reveal " style="background-image:url('image/food6_result.webp')"></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <div class="container">
+
+    <h5 class="reveal">WHY CHOOSE US</h5>
+    <h2 class="reveal delay">
+      The Experience That Makes Us <span>Different</span>
+    </h2>
+    <p class="reveal delay2">
+      At 7Days Restaurant, we focus on more than just food. 
+      We create a complete dining experience built on quality, comfort, and care.
+    </p>
+
+    <div class="experience-grid">
+
+      <div class="experience-card reveal">
+        <h3>Luxury Ambience</h3>
+        <p>
+          A calm, elegant and premium environment designed for comfort and class.
+        </p>
+      </div>
+
+      <div class="experience-card reveal delay">
+        <h3>Expert Chefs</h3>
+        <p>
+          Skilled chefs preparing dishes with precision, passion and consistency.
+        </p>
+      </div>
+
+      <div class="experience-card reveal delay2">
+        <h3>Fresh Ingredients</h3>
+        <p>
+          We use only fresh, hygienic and carefully selected ingredients every day.
+        </p>
+      </div>
+
+      <div class="experience-card reveal delay3">
+        <h3>Customer First</h3>
+        <p>
+          Warm service, quick response and complete customer satisfaction.
+        </p>
+      </div>
+
+      <div class="experience-card reveal delay4">
+        <h3>Perfect for Events</h3>
+        <p>
+          Ideal space for birthdays, family dinners and private celebrations.
+        </p>
+      </div>
+
+      <div class="experience-card reveal delay5">
+        <h3>Trusted Quality</h3>
+        <p>
+          Consistent taste, honest pricing and reliable service you can trust.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="contact-luxury" id="Contact">
+  
+  <div class="contact-box reveal">
+    <div class="contact-header">
+      <h5>Reach Out</h5>
+      <h2>Contact <span>7Days Restaurant</span></h2>
+      <p>We would love to hear from you! For reservations, feedback, or inquiries, reach us using the form or directly via WhatsApp.</p>
+    </div>
+    <h2>Get in Touch with <span>Zaika Restaurant</span></h2>
+    
+    <div class="contact-content">
+
+      <!-- LEFT: Address + Map + WhatsApp -->
+      <div class="contact-left">
+        <h3>Our Location</h3>
+        <p>7Days Restaurant<br>
+           Tetra Bazaar, Siddharthnagar<br>
+           Uttar Pradesh, India</p>
+
+        <p class="timing">🕒 10:00 AM – 11:00 PM</p>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.000000000000!2d83.916666!3d27.433333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2s7%20Days%20Restaurant!5e0!3m2!1sen!2sin!4v1670000000000!5m2!1sen!2sin" 
+            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <a href="https://wa.me/919XXXXXXXXX" target="_blank" class="whatsapp-btn">
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="contact-right">
+        <h3>Send a Message</h3>
+        <form id="contactFormLuxury" class="contact-form">
+          <div class="field">
+            <input type="text" name="name" required>
+            <label>Name</label>
+          </div>
+          <div class="field">
+            <input type="email" name="email" required>
+            <label>Email</label>
+          </div>
+          <div class="field">
+            <input type="tel" name="phone" required>
+            <label>Phone</label>
+          </div>
+          <div class="field textarea">
+            <textarea name="message" required></textarea>
+            <label>Message</label>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LOGO & DESCRIPTION -->
+    <div class="footer-about">
+      <div class="footer-logo">7Days</div>
+      <p>
+        Premium luxury dining experience in Siddharthnagar. Exquisite dishes, elegant ambiance, and world-class service await you.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#Reservation">Reservations</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📍 Tetra Bazaar, Siddharthnagar, Uttar Pradesh</p>
+      <p>📞 +91 9XXXXXXXXX</p>
+      <p>✉️ booking@zaikarestaurant.com</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    &copy; 2026 7Days Restaurant. All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+document.querySelector(".ultra-form").addEventListener("submit", e => {
+  e.preventDefault();
+  e.target.innerHTML =
+    "<h2 style='color:#d4af37;text-align:center'>Reservation Confirmed ✨</h2><p style='color:#aaa;text-align:center'>Our team will contact you shortly.</p>";
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
