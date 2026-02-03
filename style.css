@@ -34,52 +34,6 @@ body {
 /* ==========================
    MOBILE NAVBAR (3 DOT MENU)
 ========================== */
-
-.menu-dots {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
-}
-
-.menu-dots span {
-  width: 6px;
-  height: 6px;
-  background: #fff;
-  border-radius: 50%;
-}
-
-/* MOBILE NAV */
-@media (max-width: 768px) {
-
-  .menu-dots {
-    display: flex;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background: rgba(0,0,0,0.96);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    transition: right 0.4s ease;
-  }
-
-  .nav-links.show {
-    right: 0;
-  }
-
-  .nav-links a {
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-}
-
 .navbar.scrolled {
   background: rgba(0,0,0,0.85);
   backdrop-filter: blur(10px);
@@ -1073,5 +1027,59 @@ body {
   section p {
     font-size: 15px;
     text-align: center;
+  }
+}
+/* ==========================
+   MOBILE SIDE NAVBAR
+========================== */
+@media (max-width: 768px) {
+
+  .menu-dots {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100vh;
+    background: #000;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 25px;
+    transition: right 0.35s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    padding-left: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation-form .row {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation-form {
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation-form input,
+  .reservation-form textarea {
+    font-size: 16px; /* mobile-friendly */
   }
 }

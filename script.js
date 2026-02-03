@@ -99,17 +99,3 @@ document.getElementById('contactFormLuxury').addEventListener('submit', e => {
     <p style='color:#aaa;text-align:center'>We will contact you shortly.</p>
   `;
 });
-// MOBILE MENU TOGGLE
-const menuDots = document.getElementById("menuDots");
-const navLinks = document.querySelector(".nav-links");
-
-menuDots.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
-
-// CLOSE MENU ON LINK CLICK
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("show");
-  });
-});
